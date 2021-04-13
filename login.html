@@ -1,0 +1,47 @@
+<html>
+<head>
+    <title>Log in</title>
+    <link rel="stylesheet" href="page.css">
+    <script>
+        function validate(){
+        
+        if(document.getElementById("email").value ==""){document.getElementById("err_email").innerHTML="This Field Is Required"}
+        if(document.getElementById("pass").value ==""){document.getElementById("err_pass").innerHTML="This Field Is Required"}
+        
+         if(document.getElementById("email").value=="admin@lcit.com"){ letsGo = true; if(document.getElementById("pass").value=="lcit123")
+        {
+            letsGo = true;
+            document.getElementById("submit").href="home.html"}} 
+        
+    }
+    </script>
+    </head>
+    <body align="center">
+    <table align="center">
+        <h1>Log in Page</h1>
+    <div class="topnav">
+        <a href="login.html">log in</a>
+        <a href="signin.html">sign in</a>
+        <a class="active" href="main.html">Home</a>
+      </div>
+      <h2>JASPREET KAUR C0784464 is welcoming you on log in Page</h2>
+        <tr>
+        <td>EMAIL:</td>
+            <td><input type="email" id="email"><span id="err_email"></span></td>
+        </tr>
+        <br>
+        <tr>
+        <td>PASSWORD:</td>
+        <td><input type="password" id="pass"><span id="err_pass"></span></td></tr>
+        </tr>
+        <tr>
+            <td><br><br><br><br></td>
+            <td>
+                
+    <a class="button" id="submit" href="#" onclick="validate()">login</a></td>
+        </tr>
+        </table><br>    
+    
+     
+    </body>
+    </html>
